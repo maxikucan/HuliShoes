@@ -11,6 +11,10 @@
     width: 120px;
 }
 
+#search-box{
+    width: 400px;
+}
+
 .articulos{
     margin-top: 30px;
 }
