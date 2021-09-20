@@ -19,169 +19,119 @@
 
 </head>
 <body>
-    <div class="container">
-        <!--MAIN NAVIGATION-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a href="/index.html"><img src="/img/Calzado.png" alt="Logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about.html">Sobre mi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" id="search-box" placeholder="Busca por nombre" aria-label="Search" maxlength="40" autocomplete="off">
-                  <button class="btn btn-outline-success" id="buscarBtn" type="button">Buscar</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-          <!--NAV 2- MARCAS DROPDOWN-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Ver por</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Marcas
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#zapas-nike">Nike</a></li>
-                      <li><a class="dropdown-item" href="#zapas-adidas">Adidas</a></li>
-                      <li><a class="dropdown-item" href="#zapas-topper">Topper</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- ARTICULOS -->
-        <div class="articulos">
-            <div class="row">
-                <div class="col-lg-4" id="item1">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS W AIR ZOOM PEGASUS 38 NIKE.jpg" class="card-img-top" alt="nike1" id="zapas-nike">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS W AIR ZOOM PEGASUS 38 NIKE</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
+  <div class="container" id="contenedor">
 
-                <div class="col-lg-4" id="item2">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS W AIR ZOOM VAPOR PRO NIKE.jpg" class="card-img-top" alt="nike2" id="zapas-nike">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS W AIR ZOOM VAPOR PRO NIKE</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
+  <!-- Boton de prueba para modal -->
 
-                <div class="col-lg-4" id="item3">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS WMNS WINFLO 8 NIKE.jpg" class="card-img-top" alt="nike3" id="zapas-nike">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS WMNS WINFLO 8 NIKE</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
+ <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+-->
+  
+<!-- Modal -->
 
-                <div class="col-lg-4" id="item4">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS ADVANTAGE BASE ADIDAS.jpg" class="card-img-top" alt="adidas1" id="zapas-adidas">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS ADVANTAGE BASE ADIDAS</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4" id="item5">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS ALPHATORSION 2.0 ADIDAS.jpg" class="card-img-top" alt="adidas2" id="zapas-adidas">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS ALPHATORSION 2.0 ADIDAS</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Tarjeta de Compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="Amodal">
+        <img src="" alt="" class="modal-img">
+        <hr>
+        <h4 class="nombre-modal">Nombre</h4>
+        <br>
+        <h5>Informacion</h5>
+        <hr>
+        <p class="precio-modal">Precio</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="col-lg-4" id="item6">
-                  <div class="card" style="width: 18rem;">  
-                      <img src="/img/ZAPATILLAS LITE RACER 2.0 ADIDAS.jpg" class="card-img-top" alt="adidas3" id="zapas-adidas">
-                      <div class="card-body"><hr>
-                      <h5 class="card-title">ZAPATILLAS LITE RACER 2.0 ADIDAS</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                      <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                      </div>
-                  </div>
-              </div>
 
-                <div class="col-lg-4" id="item7">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS MAMBA TOPPER.jpg" class="card-img-top" alt="topper1" id="zapas-topper">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS MAMBA TOPPER</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" id="item8">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS ULTRALIGHT II TOPPER.jpg" class="card-img-top" alt="topper2"  id="zapas-topper">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS ULTRALIGHT II TOPPER</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" id="item9">
-                    <div class="card" style="width: 18rem;">  
-                        <img src="/img/ZAPATILLAS GONDOR II TOPPER.jpg" class="card-img-top" alt="topper3"  id="zapas-topper">
-                        <div class="card-body"><hr>
-                        <h5 class="card-title">ZAPATILLAS GONDOR II TOPPER</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam?<nav></nav></p>
-                        <button class="btn btn-primary" onclick="comprar()">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--MAIN NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/index.html"><img src="/img/Calzado.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" id="search-box" placeholder="Busca por nombre" aria-label="Search" maxlength="40" autocomplete="off">
+            <button class="btn btn-outline-success" id="buscarBtn" type="button">Buscar</button>
+          </form>
         </div>
+      </div>
+    </nav>
+    <!--NAV 2- MARCAS DROPDOWN-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ver por</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Marcas
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#nike1">Nike</a></li>
+                <li><a class="dropdown-item" href="#adidas1">Adidas</a></li>
+                <li><a class="dropdown-item" href="#topper1">Topper</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+          <!-- ARTICULOS -->
+          <div class="row" id="items"></div>
+
+          <!-- TEMPLATE CARD -->
+        <template id="template-card">
+          <div class="col-lg-4" id="item1">
+            <div class="card" style="width: 18rem;" id="">
+              <div class="card-body">
+                <img src="" class="card-img-top" alt=""><hr>
+                <h5 class="card-title">Titulo</h5><br>
+                <p class="card-text">Informacion<nav></nav></p>
+                <button class="btn btn-primary">Comprar</button><span class="precio">Precio</span>
+              </div>
+            </div>
+          </div>
+        </template>
+
+
           <!-- FOOTER -->
         <section class="social">
           <hr>
           <br>
+          <br>
           <p class="redes"><a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-instagram"></a></p><br>
           <p class="creditos">Hecho por Maximiliano Kucan</p>
         </section>
-    </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-    
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
 </body>
 </html>
