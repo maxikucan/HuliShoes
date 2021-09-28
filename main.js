@@ -24,7 +24,7 @@ const fetchData = async () => {
         console.log(error);
     }
 }
-
+// PINTAR CARTAS 
 const pintarCards = data =>{
     data.forEach(producto => {
        
@@ -44,7 +44,8 @@ const pintarCards = data =>{
     
     items.appendChild(fragment);
 }
-
+ 
+// AÑADIR AL CARRITO + PINTAR MODAL
 const addCarrito = e =>{
     if (e.target.classList.contains("btn-primary")){
         setCarrito(e.target.parentElement);
@@ -70,10 +71,55 @@ const setCarrito = objeto =>{
     
 }
 
+// FILTRO DE BUSQUEDA
+
+function busqueda(){
+    let buscador = document.getElementById("search-box");
+    let cartasTodas = document.querySelectorAll(".card-title");
+    let texto = buscador.value.toUpperCase();
+  
+    for (let i = 0; i < cartasTodas.length; i++){
+        let resultado = cartasTodas[i].innerHTML.includes(texto);
+        let padre = cartasTodas[i].parentNode;
+        let superPadre = padre.parentNode;
+        
+        if (resultado == false){
+            superPadre.style.display = "none";
+           
+        }
+        else {
+            superPadre.style.display = "inline-block";
+        }
+        
+    }
+}
+
+let numeroTarjeta = document.getElementById("numeroTarjeta");
+
+numeroTarjeta.addEventListener("keyup", (e) =>{
+    let valorInput = e.target.value;
+
+    numeroTarjeta.value = valorInput
+    .replace(/\s/g, "")
+    .replace(/\D/g, "")
+    .replace(/([0-9]{4})/g, "$1 ");
+})
+
+let cvv = document.getElementById("cvv");
+
+cvv.addEventListener("keyup", (e) =>{
+    let valorInputDos = e.target.value;
+
+    cvv.value = valorInputDos
+    .replace(/\s/g, "")
+    .replace(/\D/g, "")
+    .replace(/([0-9]{3})/g, "$1 ");
+})
+
+
 // SCROLL REVEAL
 
 ScrollReveal().reveal('.container-fluid', {delay: 100} );
 ScrollReveal().reveal('.articulos', {delay: 250} );
 ScrollReveal().reveal('#zapas-topper', {delay: 200} );
-ScrollReveal().reveal('.compra', {delay: 150} );
 

@@ -28,7 +28,7 @@
   </button>
 -->
   
-<!-- Modal -->
+<!-- Modal 1 -->
 
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modal">
   <div class="modal-dialog">
@@ -45,10 +45,24 @@
         <h5>Informacion</h5>
         <hr>
         <p class="precio-modal">Precio</p>
+        <hr>
+        <h3>Ingrese los datos de su tarjeta:</h3><br>
+        <form></form>
+          <h6>Numero de Tarjeta</h6>
+          <input type="text" class="modal-input-text" placeholder="XXXX-XXXX-XXXX-XXXX" id="numeroTarjeta" autocomplete="off" maxlength="19"><br><br>
+          <label for="selectMes">Expiración</label><br>
+          <select name="Mes" id="selectMes">
+            <option disabled selected>Mes</option>
+          </select>
+          <select name="año" id="selectMes">
+            <option disabled selected>Año</option>
+          </select>
+          <input type="text" placeholder="CVV" id="cvv" autocomplete="off" maxlength="3">
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Comprar</button>
+        <button type="button" class="btn btn-primary" id="compra">Comprar</button>
       </div>
     </div>
   </div>
@@ -76,7 +90,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" id="search-box" placeholder="Busca por nombre" aria-label="Search" maxlength="40" autocomplete="off">
-            <button class="btn btn-outline-success" id="buscarBtn" type="button">Buscar</button>
+            <button class="btn btn-outline-success" id="buscarBtn" type="button" onclick="busqueda()">Buscar</button>
           </form>
         </div>
       </div>
