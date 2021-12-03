@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huli Shoes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huli Shoes</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
-  <div class="container" id="contenedor">
 
-  <!-- Boton de prueba para modal -->
 
- <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
--->
-  
-<!-- Modal 1 -->
-
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Tarjeta de Compra</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" id="Amodal">
-        <img src="" alt="" class="modal-img">
-        <hr>
-        <h4 class="nombre-modal">Nombre</h4>
-        <br>
-        <h5>Informacion</h5>
-        <hr>
-        <p class="precio-modal">Precio</p>
-        <hr>
-        <h3>Ingrese los datos de su tarjeta:</h3><br>
-        <form></form>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Tarjeta de Compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="Amodal">
+          <img src="" alt="" class="modal-img">
+          <hr>
+          <h4 class="nombre-modal">Nombre</h4>
+          <br>
+          <h5>Informacion</h5>
+          <hr>
+          <p class="precio-modal">Precio</p>
+          <hr>
+          <h3>Ingrese los datos de su tarjeta:</h3><br>
+          <form></form>
           <h6>Numero de Tarjeta</h6>
-          <input type="text" class="modal-input-text" placeholder="XXXX-XXXX-XXXX-XXXX" id="numeroTarjeta" autocomplete="off" maxlength="19"><br><br>
+          <input type="text" class="modal-input-text" placeholder="XXXX-XXXX-XXXX-XXXX" id="numeroTarjeta"
+            autocomplete="off" maxlength="19"><br><br>
           <label for="selectMes">Expiración</label><br>
           <select name="Mes" id="selectMes">
             <option disabled selected>Mes</option>
@@ -58,23 +56,25 @@
             <option disabled selected>Año</option>
           </select>
           <input type="text" placeholder="CVV" id="cvv" autocomplete="off" maxlength="3">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="compra">Comprar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="compra">Comprar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <!--MAIN NAVIGATION-->
+  <!--MAIN NAVIGATION-->
+  <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a href="/index.html"><img src="/img/Calzado.png" alt="Logo" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -89,7 +89,8 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" id="search-box" placeholder="Busca por nombre" aria-label="Search" maxlength="40" autocomplete="off">
+            <input class="form-control me-2" type="search" id="search-box" placeholder="Busca por nombre"
+              aria-label="Search" maxlength="40" autocomplete="off">
             <button class="btn btn-outline-success" id="buscarBtn" type="button" onclick="busqueda()">Buscar</button>
           </form>
         </div>
@@ -99,13 +100,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Ver por</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Marcas
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -118,34 +121,39 @@
         </div>
       </div>
     </nav>
-          <!-- ARTICULOS -->
-          <div class="row" id="items"></div>
 
-          <!-- TEMPLATE CARD -->
-        <template id="template-card">
-          <div class="col-lg-4" id="item1">
-            <div class="card" style="width: 18rem;" id="">
-              <div class="card-body">
-                <img src="" class="card-img-top" alt=""><hr>
-                <h5 class="card-title">Titulo</h5><br>
-                <p class="card-text">Informacion<nav></nav></p>
-                <button class="btn btn-primary">Comprar</button><span class="precio">Precio</span>
-              </div>
-            </div>
+    <!-- ARTICULOS -->
+    <div class="row" id="items"></div>
+
+    <!-- TEMPLATE CARD -->
+    <template id="template-card">
+      <div class="col-lg-4" id="item1">
+        <div class="card" style="width: 18rem;" id="">
+          <div class="card-body">
+            <img src="" class="card-img-top" alt="">
+            <hr>
+            <h5 class="card-title">Titulo</h5><br>
+            <p class="card-text">Informacion
+            <nav></nav>
+            </p>
+            <button class="btn btn-primary">Comprar</button><span class="precio">Precio</span>
           </div>
-        </template>
+        </div>
+      </div>
+    </template>
 
 
-          <!-- FOOTER -->
-        <section class="social">
-          <hr>
-          <br>
-          <br>
-          <p class="redes"><a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-instagram"></a></p><br>
-          <p class="creditos">Hecho por Maximiliano Kucan</p>
-        </section>
+    <!-- FOOTER -->
+    <section class="social">
+      <hr>
+      <br>
+      <br>
+      <p class="redes"><a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-instagram"></a></p><br>
+      <p class="creditos">Hecho por Maximiliano Kucan</p>
+    </section>
   </div>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
