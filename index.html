@@ -46,13 +46,11 @@
           <h6>Numero de Tarjeta</h6>
           <input type="text" class="modal-input-text" placeholder="XXXX-XXXX-XXXX-XXXX" id="numeroTarjeta"
             autocomplete="off" maxlength="19"><br><br>
+
           <label for="selectMes">Expiración</label><br>
-          <select name="Mes" id="selectMes">
-            <option disabled selected>Mes</option>
-          </select>
-          <select name="año" id="selectMes">
-            <option disabled selected>Año</option>
-          </select>
+          <input type="text" name="Mes" id="selectMes" class="mesYAño" maxlength="2" placeholder="Mes" autocomplete="off"/>
+          <input type="text" name="año" id="selectAño" class="mesYAño" maxlength="2" placeholder="Año" autocomplete="off">
+          
           <input type="text" placeholder="CVV" id="cvv" autocomplete="off" maxlength="3">
           </form>
         </div>

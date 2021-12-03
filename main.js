@@ -120,18 +120,53 @@ cvv.addEventListener("keyup", (e) => {
 })
 
 const comprar = () => {
+    const mes = document.getElementById("selectMes").value
+    const year = document.getElementById("selectAño").value
+    const cvv = document.getElementById("cvv").value
 
     if ((!numeroTarjeta.value) || (numeroTarjeta.value.length < 16)) {
         alert("Ingrese un número de tarjeta válido (16 dígitos).")
 
     }
-
-    else {
-        alert("Gracias por su compra ficticia.")
+    if(mes > 12 || mes < 0){
+        alert("Ingrese un mes válido")
     }
+    if(year < 21 || year > 40){
+        alert("Ingrese un año válido")
+    } 
+    if(!cvv || cvv.length < 3 || cvv == 0){
+        alert("Ingrese el CVV correcto")
+    }
+    else{
+        alert("Muchas gracias por su compra ficticia!")
+    }
+
 }
 
+const mes = document.getElementById("selectMes")
 
+
+mes.addEventListener("keyup", (e) => {
+    let valorInput = e.target.value;
+
+    mes.value = valorInput
+        .replace(/\s/g, "")
+        .replace(/\D/g, "")
+        .replace(/([0-9]{4})/g, "$1 ");
+
+     
+})
+
+const year = document.getElementById("selectAño")
+
+year.addEventListener("keyup", (e) => {
+    let valorInput = e.target.value;
+
+    year.value = valorInput
+        .replace(/\s/g, "")
+        .replace(/\D/g, "")
+        .replace(/([0-9]{4})/g, "$1 ");
+})
 
 // SCROLL REVEAL
 
