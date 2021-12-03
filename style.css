@@ -1,4 +1,4 @@
-*{
+body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -16,9 +16,20 @@
 }
 
 
+#items{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#item1{
+    display: flex;
+    justify-content: center;
+}
+
 .card{
     margin-bottom: 20px;
     margin-top: 30px;
+    
 }
 
 .card-title{
