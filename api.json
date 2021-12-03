@@ -1,7 +1,7 @@
 [
     {
         "nombre": "ZAPATILLAS W AIR ZOOM PEGASUS 38 NIKE",
-        "img" : "/img/ZAPATILLAS W AIR ZOOM PEGASUS 38 NIKE.jpg",
+        "img" : "./img/ZAPATILLAS W AIR ZOOM PEGASUS 38 NIKE.jpg",
         "id": 1,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 9890",
@@ -9,7 +9,7 @@
     },
     {
         "nombre": "ZAPATILLAS W AIR ZOOM VAPOR PRO NIKE",
-        "img" : "/img/ZAPATILLAS W AIR ZOOM VAPOR PRO NIKE.jpg",
+        "img" : "./img/ZAPATILLAS W AIR ZOOM VAPOR PRO NIKE.jpg",
         "id": 2,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 8990",
@@ -17,7 +17,7 @@
     },
     {
         "nombre": "ZAPATILLAS WMNS WINFLO 8 NIKE",
-        "img" : "/img/ZAPATILLAS WMNS WINFLO 8 NIKE.jpg",
+        "img" : "./img/ZAPATILLAS WMNS WINFLO 8 NIKE.jpg",
         "id": 3,
         "info": "Zarpadas zapas 3d.com ASDASDSDSD",
         "precio": "$ 7900",
@@ -25,7 +25,7 @@
     },
     {
         "nombre": "ZAPATILLAS ADVANTAGE BASE ADIDAS",
-        "img" : "/img/ZAPATILLAS ADVANTAGE BASE ADIDAS.jpg",
+        "img" : "./img/ZAPATILLAS ADVANTAGE BASE ADIDAS.jpg",
         "id": 4,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 11200",
@@ -33,7 +33,7 @@
     },
     {
         "nombre": "ZAPATILLAS TORSION 2.0 ADIDAS",
-        "img" : "/img/ZAPATILLAS ALPHATORSION 2.0 ADIDAS.jpg",
+        "img" : "./img/ZAPATILLAS ALPHATORSION 2.0 ADIDAS.jpg",
         "id": 5,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 10900",
@@ -41,7 +41,7 @@
     },
     {
         "nombre": "ZAPATILLAS LITE RACER 2.0 ADIDAS",
-        "img" : "/img/ZAPATILLAS LITE RACER 2.0 ADIDAS.jpg",
+        "img" : "./img/ZAPATILLAS LITE RACER 2.0 ADIDAS.jpg",
         "id": 6,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 8900",
@@ -49,7 +49,7 @@
     },
     {
         "nombre": "ZAPATILLAS MAMBA TOPPER",
-        "img" : "/img/ZAPATILLAS MAMBA TOPPER.jpg",
+        "img" : "./img/ZAPATILLAS MAMBA TOPPER.jpg",
         "id": 7,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 6900",
@@ -57,7 +57,7 @@
     },
     {
         "nombre": "ZAPATILLAS ULTRALIGHT II TOPPER",
-        "img" : "/img/ZAPATILLAS ULTRALIGHT II TOPPER.jpg",
+        "img" : "./img/ZAPATILLAS ULTRALIGHT II TOPPER.jpg",
         "id": 8,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 7100",
@@ -65,7 +65,7 @@
     },
     {
         "nombre": "ZAPATILLAS GONDOR II TOPPER",
-        "img" : "/img/ZAPATILLAS GONDOR II TOPPER.jpg",
+        "img" : "./img/ZAPATILLAS GONDOR II TOPPER.jpg",
         "id": 9,
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum placeat esse incidunt neque. Totam",
         "precio": "$ 7400",
