@@ -6,120 +6,136 @@ const templateCard = document.getElementById("template-card").content;
 const fragment = document.createDocumentFragment();
 let carrito = {};
 
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
     fetchData();
 })
-items.addEventListener("click", e =>{
+items.addEventListener("click", e => {
     addCarrito(e);
 })
 
 const fetchData = async () => {
-    try{
+    try {
         const res = await fetch("api.json");
         const data = await res.json();
         pintarCards(data);
-        
+
     }
-    catch (error){
+    catch (error) {
         console.log(error);
     }
 }
 // PINTAR CARTAS 
-const pintarCards = data =>{
+const pintarCards = data => {
     data.forEach(producto => {
-       
+
         templateCard.querySelector("h5").textContent = producto.nombre;
         templateCard.querySelector("p").textContent = producto.info;
         templateCard.querySelector("span").textContent = producto.precio;
-        templateCard.querySelector("img").setAttribute("src" , producto.img);
-        templateCard.querySelector(".card").setAttribute("id" , producto.idmarca);
+        templateCard.querySelector("img").setAttribute("src", producto.img);
+        templateCard.querySelector(".card").setAttribute("id", producto.idmarca);
         templateCard.querySelector(".btn-primary").dataset.id = producto.id;
         templateCard.querySelector(".btn-primary").setAttribute("data-bs-toggle", "modal");
         templateCard.querySelector(".btn-primary").setAttribute("data-bs-target", "#staticBackdrop");
 
-        
+
         const clone = templateCard.cloneNode(true);
         fragment.appendChild(clone);
     })
-    
+
     items.appendChild(fragment);
 }
- 
+
 // AÑADIR AL CARRITO + PINTAR MODAL
-const addCarrito = e =>{
-    if (e.target.classList.contains("btn-primary")){
+const addCarrito = e => {
+    if (e.target.classList.contains("btn-primary")) {
         setCarrito(e.target.parentElement);
     }
     e.stopPropagation();
 }
 
-const setCarrito = objeto =>{
-    
+const setCarrito = objeto => {
+
     const producto = {
         id: objeto.querySelector(".btn-primary").dataset.id,
         nombre: objeto.querySelector("h5").textContent,
         info: objeto.querySelector("p").textContent,
         precio: objeto.querySelector("span").textContent,
         img: objeto.querySelector("img").src
-       
+
     }
-   
+
     modal.querySelector("h4").textContent = producto.nombre;
     modal.querySelector("h5").textContent = producto.info;
     modal.querySelector("p").textContent = producto.precio;
     modal.querySelector("img").setAttribute("src", producto.img);
-    
+
 }
 
 // FILTRO DE BUSQUEDA
 
-function busqueda(){
+function busqueda() {
     let buscador = document.getElementById("search-box");
     let cartasTodas = document.querySelectorAll(".card-title");
     let texto = buscador.value.toUpperCase();
-  
-    for (let i = 0; i < cartasTodas.length; i++){
+
+    for (let i = 0; i < cartasTodas.length; i++) {
         let resultado = cartasTodas[i].innerHTML.includes(texto);
         let padre = cartasTodas[i].parentNode;
         let superPadre = padre.parentNode;
-        
-        if (resultado == false){
+
+        if (resultado == false) {
             superPadre.style.display = "none";
-           
+
         }
         else {
             superPadre.style.display = "inline-block";
         }
-        
+
     }
 }
 
+// TARJETA DE CREDITO
+
 let numeroTarjeta = document.getElementById("numeroTarjeta");
 
-numeroTarjeta.addEventListener("keyup", (e) =>{
+
+numeroTarjeta.addEventListener("keyup", (e) => {
     let valorInput = e.target.value;
 
     numeroTarjeta.value = valorInput
-    .replace(/\s/g, "")
-    .replace(/\D/g, "")
-    .replace(/([0-9]{4})/g, "$1 ");
+        .replace(/\s/g, "")
+        .replace(/\D/g, "")
+        .replace(/([0-9]{4})/g, "$1 ");
 })
 
 let cvv = document.getElementById("cvv");
 
-cvv.addEventListener("keyup", (e) =>{
+cvv.addEventListener("keyup", (e) => {
     let valorInputDos = e.target.value;
 
     cvv.value = valorInputDos
-    .replace(/\s/g, "")
-    .replace(/\D/g, "")
-    .replace(/([0-9]{3})/g, "$1 ");
+        .replace(/\s/g, "")
+        .replace(/\D/g, "")
+        .replace(/([0-9]{3})/g, "$1 ");
 })
+
+const comprar = () => {
+
+    if ((!numeroTarjeta.value) || (numeroTarjeta.value.length < 16)) {
+        alert("Ingrese un número de tarjeta válido (16 dígitos).")
+
+    }
+
+    else {
+        alert("Gracias por su compra ficticia.")
+    }
+}
+
 
 
 // SCROLL REVEAL
 
-ScrollReveal().reveal('.container-fluid', {delay: 100} );
-ScrollReveal().reveal('.articulos', {delay: 250} );
-ScrollReveal().reveal('#zapas-topper', {delay: 200} );
+ScrollReveal().reveal('.container-fluid', { delay: 100 });
+ScrollReveal().reveal('.articulos', { delay: 250 });
+ScrollReveal().reveal('#zapas-topper', { delay: 200 });
 
