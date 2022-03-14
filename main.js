@@ -24,6 +24,7 @@ const fetchData = async () => {
         console.log(error);
     }
 }
+
 // PINTAR CARTAS 
 const pintarCards = data => {
     data.forEach(producto => {
@@ -126,19 +127,23 @@ const comprar = () => {
 
     if ((!numeroTarjeta.value) || (numeroTarjeta.value.length < 16)) {
         alert("Ingrese un número de tarjeta válido (16 dígitos).")
-
+        return
     }
-    if(mes > 12 || mes < 0){
+    if(mes > 12 || mes <= 0){
         alert("Ingrese un mes válido")
+        return
     }
-    if(year < 21 || year > 40){
+    if(year < 22 || year > 40){
         alert("Ingrese un año válido")
+        return
     } 
     if(!cvv || cvv.length < 3 || cvv == 0){
         alert("Ingrese el CVV correcto")
+        return
     }
     else{
         alert("Muchas gracias por su compra ficticia!")
+        location.reload();
     }
 
 }
